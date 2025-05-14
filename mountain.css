@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.manzara {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #e0f7fa;
+}
+
+.tog {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 200px solid #0288d1;
+  z-index: 10;
+}
+
+.tog1 {
+  left: 20%;
+}
+
+.tog2 {
+  left: 60%;
+  border-bottom-color: #03a9f4;
+}
+
+.tog3 {
+  left: 40%;
+  border-bottom-color: #039be5;
+  position: absolute;
+  bottom: -40px;
+}
+.quyosh {
+  position: absolute;
+  left: 60%;
+  bottom: 100px;
+  width: 100px;
+  height: 100px;
+  background: #ffca28;
+  border-radius: 50%;
+  animation-name: quyoshAnim;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.bulut {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background: #cfd8dc;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation-name: bulut;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.bulut1 {
+  top: 50px;
+  left: 20%;
+}
+
+.bulut2 {
+  top: 55px;
+  left: 35%;
+}
+.bulut3 {
+  top: 62px;
+  left: 45%;
+}
+.bulut4 {
+  top: 45px;
+  left: 22%;
+}
+.bulut5 {
+  top: 80px;
+  left: 60%;
+}
+
+/* Quyosh animatsiyasi */
+@keyframes quyoshAnim {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 300px;
+  }
+  100% {
+    bottom: 900px;
+  }
+}
+
+@keyframes bulut {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(100px, 0);
+  }
+  50% {
+    transform: translate(200px, 0);
+  }
+  75% {
+    transform: translate(300px, 0);
+  }
+  100% {
+    transform: translate(400px, 0);
+  }
+}
